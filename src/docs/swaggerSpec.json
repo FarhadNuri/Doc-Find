@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Daktar Kothay API",
+    "title": "Doc Find API",
     "version": "1.0.0",
     "description": "Backend API for finding specialist doctors and chambers in Bangladesh"
   },
@@ -1769,7 +1769,7 @@
                 "demoAdmin": {
                   "summary": "Demo System Admin",
                   "value": {
-                    "email": "admin@daktarkothay.com",
+                    "email": "admin@docfind.com",
                     "password": "Admin@12345"
                   }
                 }
