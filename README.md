@@ -1,12 +1,19 @@
-# Daktar Kothay  — Specialist Doctor & Chamber Finder API
+<p align="center">
+  <h1 align="center">Doc Find — Specialist Doctor & Chamber Finder API</h1>
+</p>
 
-> **A fast RESTful backend API that helps patients in Bangladesh instantly discover the right medical specialists and visiting chambers near them based on disease symptoms and location.**
+<p align="center">
+  <strong>Fast RESTful backend API that helps patients in Bangladesh instantly discover the right medical specialists and visiting chambers near them based on disease symptoms and location.</strong>
+</p>
 
-[![Node.js Version](https://img.shields.io/badge/Node.js-20%2B-brightgreen)](https://nodejs.org/)
-[![Framework](https://img.shields.io/badge/Framework-Express%205-blue)](https://expressjs.com/)
-[![Database](https://img.shields.io/badge/Database-PostgreSQL%20(Plain%20SQL)-blue)](https://www.postgresql.org/)
-[![Validation](https://img.shields.io/badge/Validation-Zod-purple)](https://zod.dev/)
-[![Documentation](https://img.shields.io/badge/Docs-Swagger%20UI-green)](/api-docs)
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js_20+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js 20+" />
+  <img src="https://img.shields.io/badge/Express_5-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express 5" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white" alt="Zod" />
+  <img src="https://img.shields.io/badge/Swagger_UI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger UI" />
+  <img src="https://img.shields.io/badge/JWT_Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT Auth" />
+</p>
 
 ---
 
@@ -14,7 +21,7 @@
 
 In Bangladesh, finding the right specialist doctor is difficult. Patients frequently do not know which medical specialty corresponds to their symptoms (e.g., whether a persistent skin rash requires a Dermatologist or an Allergist) and often travel long distances without verified information regarding doctor visiting hours, chamber addresses, or consultation fees.
 
-**Daktar Kothay** solves this problem by connecting disease symptoms directly to verified specialists:
+**Doc Find** solves this problem by connecting disease symptoms directly to verified specialists:
 - A patient enters a common symptom or disease name (e.g., *"skin allergy"*, *"chest pain"*, *"migraine"*), and the API maps it to the relevant medical specialty.
 - The search engine calculates distance using the Haversine formula against GPS coordinates or local area names (e.g., *"GEC Circle"*, *"Agrabad"*).
 - Verified doctors manage their own chambers and consultation hours, while an admin validates doctors before they appear in public search results.
@@ -23,11 +30,11 @@ In Bangladesh, finding the right specialist doctor is difficult. Patients freque
 
 ## 2. Live Links
 
-- **API Base URL:** `https://daktar-kothay.vercel.app/api`
-- **Interactive Swagger Docs:** `https://daktar-kothay.vercel.app/api-docs` *(interactive UI to test all 19 endpoints)*
-- **Postman API Documentation:** [Daktar Kothay Postman Collection](https://documenter.getpostman.com/view/58814583/2sBYHYudBK#f320f5be-5b34-48bb-8aee-c3e78db8499d)
+- **API Base URL:** `https://docfind-v1.vercel.app/api`
+- **Interactive Swagger Docs:** `https://docfind-v1.vercel.app/api-docs` *(interactive UI to test all 19 endpoints)*
+- **Postman API Documentation:** [Doc Find Postman Collection](https://documenter.getpostman.com/view/58814583/2sBYHYudBK#f320f5be-5b34-48bb-8aee-c3e78db8499d)
 - **Architecture & System Design:** [Excalidraw Diagrams](https://excalidraw.com/#json=nM3yfOWymdlxMQ-k2fSd-,sBpxFZHMdilMu-3JSvLjQQ)
-- **Health Check:** `https://daktar-kothay.vercel.app/api/health`
+- **Health Check:** `https://docfind-v1.vercel.app/api/health`
 
 ---
 
@@ -258,7 +265,7 @@ Update your credentials in `.env`:
 ```env
 PORT=5000
 NODE_ENV=development
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/daktar_kothay
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/doc_find
 DB_SSL=false
 JWT_SECRET=super_secret_jwt_key_at_least_32_characters_long
 JWT_EXPIRES_IN=7d
@@ -295,7 +302,7 @@ Visit **`http://localhost:5000/api-docs`** in your browser to inspect and intera
 
 | Role | Email | Password | Details |
 |---|---|---|---|
-| **System Admin** | `admin@daktarkothay.com` | `Admin@12345` | Can list, approve, reject, or directly create doctors |
+| **System Admin** | `admin@docfind.com` | `Admin@12345` | Can list, approve, reject, or directly create doctors |
 | **Verified Doctor** | `doctor@demo.com` | `Doctor@12345` | Dr. Demo Verified (Dermatologist with 2 active chambers) |
 | **Pending Doctor** | `pending@demo.com` | `Doctor@12345` | Dr. Demo Pending (Waiting for admin verification) |
 | **Patient (User)** | `user@demo.com` | `User@12345` | Has saved profile location at GEC Circle, Chattogram |

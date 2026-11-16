@@ -13,4 +13,3 @@ const validateRequest = (schema, source = "body") =>
   });
 
 module.exports = { validateRequest };
-

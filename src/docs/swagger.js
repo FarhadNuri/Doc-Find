@@ -14,7 +14,7 @@ try {
     definition: {
       openapi: "3.0.0",
       info: {
-        title: "Daktar Kothay API",
+        title: "Doc Find API",
         version: "1.0.0",
         description: "Backend API for finding specialist doctors and chambers in Bangladesh",
       },
@@ -92,7 +92,7 @@ const setupSwagger = (app) => {
     swaggerUi.setup(swaggerSpec, {
       customCssUrl: SWAGGER_CSS_URL,
       customJs: SWAGGER_JS_URLS,
-      customSiteTitle: "Daktar Kothay API Documentation",
+      customSiteTitle: "Doc Find API Documentation",
     })
   );
 

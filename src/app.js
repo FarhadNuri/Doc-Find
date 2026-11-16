@@ -25,7 +25,7 @@ app.get("/", (_req, res) => {
   res.status(status.OK).json({
     success: true,
     statusCode: status.OK,
-    message: "Daktar Kothay Server is running successfully",
+    message: "Doc Find Server is running successfully",
   });
 });
 
@@ -33,7 +33,7 @@ app.get("/api", (_req, res) => {
   res.status(status.OK).json({
     success: true,
     statusCode: status.OK,
-    message: "Daktar Kothay Server is running successfully",
+    message: "Doc Find Server is running successfully",
   });
 });
 

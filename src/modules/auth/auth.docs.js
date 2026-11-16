@@ -217,7 +217,7 @@
  *             demoAdmin:
  *               summary: Demo System Admin
  *               value:
- *                 email: admin@daktarkothay.com
+ *                 email: admin@docfind.com
  *                 password: Admin@12345
  *     responses:
  *       200:
